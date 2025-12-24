@@ -58,10 +58,7 @@ function showCategory(category, event) {
     slidesPerView: 2,
     spaceBetween: 20,
     loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+   
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
