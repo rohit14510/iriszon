@@ -38,6 +38,18 @@ a {
 .Desktop-header .input-group-text i {
   font-size: 1rem;
 }
+.Supplier-btn{
+  border:1px solid #90201f;
+  color: #90201f;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.Supplier-btn:hover{
+  border:1px solid #90201f;
+  background-color: #90201f;
+  color: #fff;
+  font-weight: 600;
+}
 /* Mega Menu Hover Styles */
 .mega-menu-container {
   position: relative;

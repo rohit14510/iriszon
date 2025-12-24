@@ -59,14 +59,8 @@ function showCategory(category, event) {
     spaceBetween: 20,
     loop: true,
    
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+ 
+  
     breakpoints: {
       576: {
         slidesPerView: 2,
