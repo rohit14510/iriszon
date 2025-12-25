@@ -57,10 +57,7 @@ function showCategory(category, event) {
  var swiper = new Swiper('.categorySwiper', {
     slidesPerView: 2,
     spaceBetween: 20,
-    loop: true,
-   
- 
-  
+    loop: true, 
     breakpoints: {
       576: {
         slidesPerView: 2,
@@ -80,55 +77,38 @@ function showCategory(category, event) {
       },
     },
   });
-  document.addEventListener("DOMContentLoaded", function () {
-    new Swiper(".BannerSwiper", {
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      speed: 600,
-    });
-  });
+ // Quantity Increment
+  function incrementQuantity() {
+    const input = document.getElementById('quantity');
+    let value = parseInt(input.value);
+    if (value < parseInt(input.max)) {
+      input.value = value + 1;
+    }
+  }
+
+  // Quantity Decrement
+  function decrementQuantity() {
+    const input = document.getElementById('quantity');
+    let value = parseInt(input.value);
+    if (value > parseInt(input.min)) {
+      input.value = value - 1;
+    }
+  }
+
+  // Toggle Wishlist
+  function toggleWishlist(button) {
+    button.classList.toggle('active');
+    const icon = button.querySelector('i');
+    if (button.classList.contains('active')) {
+      icon.classList.remove('bi-star');
+      icon.classList.add('bi-star-fill');
+    } else {
+      icon.classList.remove('bi-star-fill');
+      icon.classList.add('bi-star');
+    }
+  }
  
-  const buttons = document.querySelectorAll('.category-btn');
-  const bodySection = document.getElementById('bodySection');
-  const skinSection = document.getElementById('skinSection');
 
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      buttons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const category = btn.dataset.category;
-
-      if (category === 'body') {
-        bodySection.style.display = 'flex';
-        skinSection.style.display = 'none';
-      } 
-      else if (category === 'skin') {
-        skinSection.style.display = 'flex';
-        bodySection.style.display = 'none';
-      } 
-      else { // all
-        skinSection.style.display = 'flex';
-        bodySection.style.display = 'flex';
-      }
-    });
-  });
-
-  // Default: All products visible
-  skinSection.style.display = 'flex';
-  bodySection.style.display = 'flex';
-//product image gallery
  let currentIndex = 0;
 
     function changeImage(el, index) {

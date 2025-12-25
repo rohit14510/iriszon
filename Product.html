@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRISZON</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/Css/style.css" />
+</head>
+
+<body>
+    <!-- ======Header-Section-Start====== -->
+    <!-- Desktop Header Section -->
+    <header class="border-bottom bg-white Desktop-header d-lg-block d-none  sticky-top">
+        <div class="container px-4">
+            <div class="row align-items-center py-2">
+
+                <!-- Logo -->
+                <div class="col-2">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <!-- Replace with your logo image if needed -->
+                        <img src="assets/images/logo.png" width="70px" alt="logo">
+                    </a>
+                </div>
+
+                <!-- Search -->
+                <div class="col-6">
+                    <form class="d-flex">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="bi bi-search"></i> <!-- Bootstrap Icons -->
+                            </span>
+                            <input type="text" class="form-control border-start-0"
+                                placeholder="Try Saree, Kurti or Search by Product Code">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Right side links/icons -->
+                <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-end gap-4">
+
+                        <a href="#" class="btn Supplier-btn">
+                            <span class="small">Become a Supplier</span>
+
+                        </a>
+
+
+
+                        <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                            <i class="bi bi-person fs-5 me-1"></i>
+                            <span class="small">Profile</span>
+                        </a>
+
+                        <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                            <i class="bi bi-cart fs-5 me-1"></i>
+                            <span class="small">Cart</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Navigation -->
+        <nav class="border-top border-bottom ">
+            <div class="container-fluid px-4">
+                <ul class="nav py-2">
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-dark" href="#">Popular</a>
+                    </li>
+
+                    <!-- Women Western with Mega Menu -->
+                    <li class="nav-item mega-menu-container">
+                        <a class="nav-link px-2 text-dark" href="#">Women Western</a>
+
+                        <!-- Mega Menu Dropdown -->
+                        <div class="mega-menu-dropdown">
+                            <div class="row">
+
+                                <!-- Column 1: Topwear -->
+                                <div class="col-md-3 mega-menu-column">
+                                    <h6>Topwear</h6>
+                                    <ul>
+                                        <li><a href="#">All Topwear</a></li>
+                                        <li><a href="#">Tops & Tunics</a></li>
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">T-shirts</a></li>
+                                        <li><a href="#">Gowns</a></li>
+                                        <li><a href="#">Tops & Bottom Sets</a></li>
+                                        <li><a href="#">Shirts</a></li>
+                                        <li><a href="#">Jumpsuits</a></li>
+                                        <li><a href="#">New Trends</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 2: Bottom Wear -->
+                                <div class="col-md-3 mega-menu-column">
+                                    <h6>Bottom Wear</h6>
+                                    <ul>
+                                        <li><a href="#">All Bottomwear</a></li>
+                                        <li><a href="#">Jeans & Jeggings</a></li>
+                                        <li><a href="#">Palazzos</a></li>
+                                        <li><a href="#">Trousers & Pants</a></li>
+                                        <li><a href="#">Leggings</a></li>
+                                        <li><a href="#">Shorts & Skirts</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 3: Winterwear -->
+                                <div class="col-md-3 mega-menu-column">
+                                    <h6>Winterwear</h6>
+                                    <ul>
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Sweatshirts</a></li>
+                                        <li><a href="#">Sweaters</a></li>
+                                        <li><a href="#">Capes, Shrug & Ponchos</a></li>
+                                        <li><a href="#">Coats</a></li>
+                                        <li><a href="#">Blazers & Waistcoats</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 4: Plus Size -->
+                                <div class="col-md-3 mega-menu-column">
+                                    <h6>Plus Size</h6>
+                                    <ul>
+                                        <li><a href="#">Plus Size - Dresses & Gowns</a></li>
+                                        <li><a href="#">Plus Size - Tops & Tees</a></li>
+                                        <li><a href="#">Plus size - Bottomwear</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-dark" href="#">Lingerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-dark" href="#">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-dark" href="#">Kids & Toys</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Mobile Header Section -->
+    <header class="mobile-header-menu d-block d-md-none sticky-top">
+        <div class="container-fluid">
+            <nav class="navbar navbar-light bg-white border-bottom p-2">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <button class="btn border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenuSidebar">
+                        <i class="bi bi-list fs-3"></i>
+                    </button>
+                    <a class="navbar-brand mx-auto mb-0 text-danger fw-bold fs-4" href="#"><img
+                            src="assets/images/logo.png" width="50px" alt="logo"></a>
+                    <div class="d-flex gap-2">
+                        <button class="btn border-0 text-danger">
+                            <i class="bi bi-heart-fill fs-5"></i>
+                        </button>
+                        <button class="btn border-0">
+                            <i class="bi bi-cart3 fs-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Search Bar Section (Below Header) -->
+    <section class="search-section d-block d-md-none">
+        <div class="container-fluid">
+            <div class="search-box">
+                <i class="bi bi-search search-icon"></i>
+                <input type="text" class="form-control" placeholder="Search for Sarees, Kurtis, Cosmetics, etc.">
+            </div>
+        </div>
+    </section>
+    <!-- Mobile Menu Offcanvas -->
+    <div class="offcanvas offcanvas-start mobile-header-menu" tabindex="-1" id="mobileMenuSidebar">
+        <div class="offcanvas-header">
+            <button type="button" class="btn border-0" data-bs-dismiss="offcanvas">
+                <i class="bi bi-x fs-1"></i>
+            </button>
+            <img src="assets/images/logo.png" width="50px" alt="logo">
+            <div style="width: 40px;"></div>
+        </div>
+
+        <div class="offcanvas-body p-0 d-flex">
+
+            <!-- Sidebar Categories -->
+            <div class="sidebar-categories">
+
+                <!-- Popular -->
+                <a href="#" class="category-item" onclick="showCategory('popular', event)">
+                    <div class="icon-wrapper">
+                        <i class="bi bi-star-fill category-icon"></i>
+                    </div>
+                    <div class="category-name">Popular</div>
+                </a>
+
+                <!-- Kurti, Saree & Lehenga -->
+                <a href="#" class="category-item active" onclick="showCategory('kurti-saree', event)">
+                    <div class="icon-wrapper">
+                        <img src="assets/images/saree.webp" width="100%" alt="">
+                    </div>
+                    <div class="category-name">Kurti, Saree & Lehenga</div>
+                </a>
+
+                <!-- Women Western -->
+                <a href="#" class="category-item" onclick="showCategory('women-western', event)">
+                    <div class="icon-wrapper">
+                        <img src="assets/images/saree.webp" width="100%" alt="">
+                    </div>
+                    <div class="category-name">Women Western</div>
+                </a>
+
+                <!-- Lingerie -->
+                <a href="#" class="category-item" onclick="showCategory('lingerie', event)">
+                    <div class="icon-wrapper">
+                        <img src="assets/images/saree.webp" width="100%" alt="">
+                    </div>
+                    <div class="category-name">Lingerie</div>
+                </a>
+
+                <!-- Men -->
+                <a href="#" class="category-item" onclick="showCategory('men', event)">
+                    <div class="icon-wrapper">
+                        <img src="assets/images/saree.webp" width="100%" alt="">
+                    </div>
+                    <div class="category-name">Men</div>
+                </a>
+
+                <!-- Kids & Toys -->
+                <a href="#" class="category-item" onclick="showCategory('kids', event)">
+                    <div class="icon-wrapper">
+                        <img src="assets/images/saree.webp" width="100%" alt="">
+                    </div>
+                    <div class="category-name">Kids & Toys</div>
+                </a>
+
+            </div>
+
+            <!-- Category Content Area -->
+            <div class="category-content">
+                <h6>KURTI, SAREE & LEHENGA</h6>
+
+                <h5 class="mb-3" style="color: #90201f; font-size: 1rem; font-weight: 600;">Sarees</h5>
+
+                <!-- Product Grid -->
+                <div class="product-grid">
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="All Sarees">
+                        <div class="product-name">All Sarees</div>
+                    </a>
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="Georgette Sarees">
+                        <div class="product-name">Georgette Sarees</div>
+                    </a>
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="Chiffon Sarees">
+                        <div class="product-name">Chiffon Sarees</div>
+                    </a>
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="Cotton Sarees">
+                        <div class="product-name">Cotton Sarees</div>
+                    </a>
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="Net Sarees">
+                        <div class="product-name">Net Sarees</div>
+                    </a>
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="Silk Sarees">
+                        <div class="product-name">Silk Sarees</div>
+                    </a>
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="New Collection">
+                        <div class="product-name">New Collection</div>
+                    </a>
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="Bridal Sarees">
+                        <div class="product-name">Bridal Sarees</div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ======Header-Section-End====== -->
+    <!-- ======Product-Section-Start====== -->
+    <section class="py-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-md-none p-3 bg-white border-bottom sticky-top">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn filter-btn d-flex align-items-center gap-2" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#filterOffcanvas">
+                            <i class="bi bi-funnel"></i>
+                            <span>Filters</span>
+                        </button>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center gap-2"
+                                type="button" id="sortDropdownMobile" data-bs-toggle="dropdown">
+                                <i class="bi bi-sort-down"></i>
+                                <span class="sort-text">Sort</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="sortDropdownMobile">
+                                <li><a class="dropdown-item" href="#" data-sort="relevance">Relevance</a></li>
+                                <li><a class="dropdown-item" href="#" data-sort="price-low">Price: Low to High</a></li>
+                                <li><a class="dropdown-item" href="#" data-sort="price-high">Price: High to Low</a></li>
+                                <li><a class="dropdown-item" href="#" data-sort="newest">Newest First</a></li>
+                                <li><a class="dropdown-item" href="#" data-sort="popular">Most Popular</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 p-4 bg-light border-end d-none d-md-block filter-sidebar">
+                    <div class="mb-4">
+                        <div class="dropdown w-100">
+                            <button
+                                class="btn btn-light dropdown-toggle w-100 d-flex justify-content-between align-items-center border px-3 py-2"
+                                type="button" id="sortDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="text-muted small">Sort by : <span
+                                        class="text-dark fw-medium sort-value">Relevance</span></span>
+
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="sortDropdown">
+                                <li><a class="dropdown-item" href="#" data-sort="relevance">Relevance</a></li>
+                                <li><a class="dropdown-item" href="#" data-sort="price-low">Price: Low to High</a></li>
+                                <li><a class="dropdown-item" href="#" data-sort="price-high">Price: High to Low</a></li>
+                                <li><a class="dropdown-item" href="#" data-sort="newest">Newest First</a></li>
+                                <li><a class="dropdown-item" href="#" data-sort="popular">Most Popular</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filters-container">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <h5 class="fw-bold mb-1">FILTERS</h5>
+                                <p class="text-muted small mb-0">1000+ Products</p>
+                            </div>
+                            <button class="btn btn-sm btn-link text-decoration-none" onclick="resetFilters()">Clear
+                                All</button>
+                        </div>
+                        <div class="filter-item border-bottom pb-3 mb-3">
+                            <button class="btn w-100 d-flex justify-content-between align-items-center p-0 text-start"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#categoryCollapse"
+                                aria-expanded="true">
+                                <h6 class="fw-semibold mb-0">Category</h6>
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <div class="collapse show" id="categoryCollapse">
+                                <div class="mt-3">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="category1" value="tshirts">
+                                        <label class="form-check-label" for="category1">T-Shirts</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="category2" value="shirts">
+                                        <label class="form-check-label" for="category2">Shirts</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="category3" value="jeans">
+                                        <label class="form-check-label" for="category3">Jeans</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="category4" value="jackets">
+                                        <label class="form-check-label" for="category4">Jackets</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item border-bottom pb-3 mb-3">
+                            <button class="btn w-100 d-flex justify-content-between align-items-center p-0 text-start"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#genderCollapse"
+                                aria-expanded="true">
+                                <h6 class="fw-semibold mb-0">Gender</h6>
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <div class="collapse" id="genderCollapse">
+                                <div class="mt-3">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="gender1" value="men">
+                                        <label class="form-check-label" for="gender1">Men</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="gender2" value="women">
+                                        <label class="form-check-label" for="gender2">Women</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="gender3" value="unisex">
+                                        <label class="form-check-label" for="gender3">Unisex</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="gender4" value="kids">
+                                        <label class="form-check-label" for="gender4">Kids</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item border-bottom pb-3 mb-3">
+                            <button class="btn w-100 d-flex justify-content-between align-items-center p-0 text-start"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#colorCollapse"
+                                aria-expanded="true">
+                                <h6 class="fw-semibold mb-0">Color</h6>
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <div class="collapse" id="colorCollapse">
+                                <div class="mt-3 d-flex flex-wrap gap-2">
+                                    <div class="color-option" data-color="red" style="background-color: #ff0000;"
+                                        title="Red"></div>
+                                    <div class="color-option" data-color="blue" style="background-color: #0000ff;"
+                                        title="Blue"></div>
+                                    <div class="color-option" data-color="green" style="background-color: #00ff00;"
+                                        title="Green"></div>
+                                    <div class="color-option" data-color="black" style="background-color: #000000;"
+                                        title="Black"></div>
+                                    <div class="color-option" data-color="white"
+                                        style="background-color: #ffffff; border: 1px solid #ddd;" title="White"></div>
+                                    <div class="color-option" data-color="yellow" style="background-color: #ffff00;"
+                                        title="Yellow"></div>
+                                    <div class="color-option" data-color="pink" style="background-color: #ff69b4;"
+                                        title="Pink"></div>
+                                    <div class="color-option" data-color="gray" style="background-color: #808080;"
+                                        title="Gray"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item pb-3 mb-3">
+                            <button class="btn w-100 d-flex justify-content-between align-items-center p-0 text-start"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#fabricCollapse"
+                                aria-expanded="true">
+                                <h6 class="fw-semibold mb-0">Fabric</h6>
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <div class="collapse" id="fabricCollapse">
+                                <div class="mt-3">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="fabric1" value="cotton">
+                                        <label class="form-check-label" for="fabric1">Cotton</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="fabric2" value="polyester">
+                                        <label class="form-check-label" for="fabric2">Polyester</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="fabric3" value="denim">
+                                        <label class="form-check-label" for="fabric3">Denim</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="fabric4" value="silk">
+                                        <label class="form-check-label" for="fabric4">Silk</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="fabric5" value="wool">
+                                        <label class="form-check-label" for="fabric5">Wool</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="filterOffcanvas"
+                    aria-labelledby="filterOffcanvasLabel">
+                    <div class="offcanvas-header border-bottom">
+                        <h5 class="offcanvas-title fw-bold" id="filterOffcanvasLabel">FILTERS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body p-0">
+                        <div class="filters-container p-3">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <p class="text-muted small mb-0">1000+ Products</p>
+                                <button class="btn btn-sm btn-link text-decoration-none p-0"
+                                    onclick="resetFilters()">Clear All</button>
+                            </div>
+                            <div class="filter-item border-bottom pb-3 mb-3">
+                                <button
+                                    class="btn w-100 d-flex justify-content-between align-items-center p-0 text-start"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#categoryCollapseMobile"
+                                    aria-expanded="true">
+                                    <h6 class="fw-semibold mb-0">Category</h6>
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+                                <div class="collapse" id="categoryCollapseMobile">
+                                    <div class="mt-3">
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="category1m"
+                                                value="tshirts">
+                                            <label class="form-check-label" for="category1m">T-Shirts</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="category2m"
+                                                value="shirts">
+                                            <label class="form-check-label" for="category2m">Shirts</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="category3m"
+                                                value="jeans">
+                                            <label class="form-check-label" for="category3m">Jeans</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="category4m"
+                                                value="jackets">
+                                            <label class="form-check-label" for="category4m">Jackets</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-item border-bottom pb-3 mb-3">
+                                <button
+                                    class="btn w-100 d-flex justify-content-between align-items-center p-0 text-start"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#genderCollapseMobile"
+                                    aria-expanded="true">
+                                    <h6 class="fw-semibold mb-0">Gender</h6>
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+                                <div class="collapse " id="genderCollapseMobile">
+                                    <div class="mt-3">
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="gender1m" value="men">
+                                            <label class="form-check-label" for="gender1m">Men</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="gender2m" value="women">
+                                            <label class="form-check-label" for="gender2m">Women</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="gender3m"
+                                                value="unisex">
+                                            <label class="form-check-label" for="gender3m">Unisex</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="gender4m" value="kids">
+                                            <label class="form-check-label" for="gender4m">Kids</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-item border-bottom pb-3 mb-3">
+                                <button
+                                    class="btn w-100 d-flex justify-content-between align-items-center p-0 text-start"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#colorCollapseMobile"
+                                    aria-expanded="true">
+                                    <h6 class="fw-semibold mb-0">Color</h6>
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+                                <div class="collapse " id="colorCollapseMobile">
+                                    <div class="mt-3 d-flex flex-wrap gap-2">
+                                        <div class="color-option" data-color="red" style="background-color: #ff0000;"
+                                            title="Red"></div>
+                                        <div class="color-option" data-color="blue" style="background-color: #0000ff;"
+                                            title="Blue"></div>
+                                        <div class="color-option" data-color="green" style="background-color: #00ff00;"
+                                            title="Green"></div>
+                                        <div class="color-option" data-color="black" style="background-color: #000000;"
+                                            title="Black"></div>
+                                        <div class="color-option" data-color="white"
+                                            style="background-color: #ffffff; border: 1px solid #ddd;" title="White">
+                                        </div>
+                                        <div class="color-option" data-color="yellow" style="background-color: #ffff00;"
+                                            title="Yellow"></div>
+                                        <div class="color-option" data-color="pink" style="background-color: #ff69b4;"
+                                            title="Pink"></div>
+                                        <div class="color-option" data-color="gray" style="background-color: #808080;"
+                                            title="Gray"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-item pb-3 mb-3">
+                                <button
+                                    class="btn w-100 d-flex justify-content-between align-items-center p-0 text-start"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#fabricCollapseMobile"
+                                    aria-expanded="true">
+                                    <h6 class="fw-semibold mb-0">Fabric</h6>
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+                                <div class="collapse" id="fabricCollapseMobile">
+                                    <div class="mt-3">
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="fabric1m"
+                                                value="cotton">
+                                            <label class="form-check-label" for="fabric1m">Cotton</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="fabric2m"
+                                                value="polyester">
+                                            <label class="form-check-label" for="fabric2m">Polyester</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="fabric3m" value="denim">
+                                            <label class="form-check-label" for="fabric3m">Denim</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="fabric4m" value="silk">
+                                            <label class="form-check-label" for="fabric4m">Silk</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="fabric5m" value="wool">
+                                            <label class="form-check-label" for="fabric5m">Wool</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offcanvas-footer border-top p-3">
+                        <button class="btn apply-filter-btn w-100" data-bs-dismiss="offcanvas">Apply Filters</button>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 p-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="mb-4">Products</h4>
+                            <div class="row g-4">
+                                <div class="col-lg-3 col-6 ">
+                                    <div class="Product-Card">
+                                        <div class="wishlist">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product-img">
+                                            <img src="assets/images/img-1.jpg" width="100%" alt="Product">
+                                            <span class="discount">25% OFF</span>
+                                        </div>
+                                        <div class="product-content">
+                                            <h3 class="product-title">Premium Moving Box</h3>
+                                            <div class="rating">
+                                                <span class="stars">★★★★★</span>
+                                                <span class="reviews">(124 Reviews)</span>
+                                            </div>
+                                            <p class="product-desc">
+                                                High-quality, durable packing box designed to protect your
+                                                valuables during house shifting and relocation.
+                                            </p>
+                                            <div class="price-box">
+                                                <span class="new-price">₹1,299</span>
+                                                <span class="old-price">₹1,699</span>
+                                            </div>
+                                            <button class="btn-primary">Add to Cart</button>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3 col-6 ">
+                                    <div class="Product-Card">
+                                        <div class="wishlist">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product-img">
+                                            <img src="assets/images/img-1.jpg" width="100%" alt="Product">
+                                            <span class="discount">25% OFF</span>
+                                        </div>
+                                        <div class="product-content">
+                                            <h3 class="product-title">Premium Moving Box</h3>
+                                            <div class="rating">
+                                                <span class="stars">★★★★★</span>
+                                                <span class="reviews">(124 Reviews)</span>
+                                            </div>
+                                            <p class="product-desc">
+                                                High-quality, durable packing box designed to protect your
+                                                valuables during house shifting and relocation.
+                                            </p>
+                                            <div class="price-box">
+                                                <span class="new-price">₹1,299</span>
+                                                <span class="old-price">₹1,699</span>
+                                            </div>
+                                            <button class="btn-primary">Add to Cart</button>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3 col-6 ">
+                                    <div class="Product-Card">
+                                        <div class="wishlist">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product-img">
+                                            <img src="assets/images/img-1.jpg" width="100%" alt="Product">
+                                            <span class="discount">25% OFF</span>
+                                        </div>
+                                        <div class="product-content">
+                                            <h3 class="product-title">Premium Moving Box</h3>
+                                            <div class="rating">
+                                                <span class="stars">★★★★★</span>
+                                                <span class="reviews">(124 Reviews)</span>
+                                            </div>
+                                            <p class="product-desc">
+                                                High-quality, durable packing box designed to protect your
+                                                valuables during house shifting and relocation.
+                                            </p>
+                                            <div class="price-box">
+                                                <span class="new-price">₹1,299</span>
+                                                <span class="old-price">₹1,699</span>
+                                            </div>
+                                            <button class="btn-primary">Add to Cart</button>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-lg-3 col-6 ">
+                                    <div class="Product-Card">
+                                        <div class="wishlist">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="product-img">
+                                            <img src="assets/images/img-1.jpg" width="100%" alt="Product">
+                                            <span class="discount">25% OFF</span>
+                                        </div>
+                                        <div class="product-content">
+                                            <h3 class="product-title">Premium Moving Box</h3>
+                                            <div class="rating">
+                                                <span class="stars">★★★★★</span>
+                                                <span class="reviews">(124 Reviews)</span>
+                                            </div>
+                                            <p class="product-desc">
+                                                High-quality, durable packing box designed to protect your
+                                                valuables during house shifting and relocation.
+                                            </p>
+                                            <div class="price-box">
+                                                <span class="new-price">₹1,299</span>
+                                                <span class="old-price">₹1,699</span>
+                                            </div>
+                                            <button class="btn-primary">Add to Cart</button>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ======Product-Section-End====== -->
+
+    <!-- ======Footer-Section-Start====== -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-col mb-4">
+                    <img src="assets/images/logo.png" width="80px" alt="Footer Logo">
+                    <p class="footer-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula ante eget aliquam
+                        venenatis. Donec
+                        congue at ligula in cursus.
+                    </p>
+                    <div class="social-follow">
+                        <h6>FOLLOW US</h6>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" aria-label="Pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                            <a href="#" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-col mb-4">
+                    <h5 class="footer-heading">COMPANY INFO</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Store Locations</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-col mb-4">
+                    <h5 class="footer-heading">HELP & SUPPORT</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Help and Advice</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-col mb-4">
+                    <h5 class="footer-heading">MY ACCOUNT</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register Account</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="#">My Compare</a></li>
+                        <li><a href="#">Checkout</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0 small">&copy; 2025 IRISZON. All Rights Reserved.</p>
+        </div>
+    </div>
+    <!-- ======Footer-Section-End====== -->
+    <!-- ======Mobile-Bottom-Bar-Section-Start====== -->
+    <nav class="mobile-bottom-bar d-md-none">
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">
+                    <div class="nav-icon home-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                        </svg>
+                    </div>
+                    <span class="nav-label">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <div class="nav-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                        </svg>
+                    </div>
+                    <span class="nav-label">Categories</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <div class="nav-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                    </div>
+                    <span class="nav-label">Mall</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <div class="nav-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                            <line x1="12" y1="17" x2="12.01" y2="17" />
+                        </svg>
+                    </div>
+                    <span class="nav-label">Help</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <div class="nav-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                    </div>
+                    <span class="nav-label">Account</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- ======Mobile-Bottom-Bar-Section-End====== -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/JS/main.js"></script>
+    <script src="./assets/JS/spotlight.bundle.js"></script>
+    <script src="./assets/JS/spotlight.js"></script>
+
+</body>
+
+</html>

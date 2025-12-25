@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRISZON</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/Css/style.css" />
+</head>
+
+<body>
+    <!-- ======Header-Section-Start====== -->
+    <!-- Desktop Header Section -->
+    <header class="border-bottom bg-white Desktop-header d-lg-block d-none  sticky-top">
+        <div class="container px-4">
+            <div class="row align-items-center py-2">
+
+                <!-- Logo -->
+                <div class="col-2">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <!-- Replace with your logo image if needed -->
+                        <img src="assets/images/logo.png" width="70px" alt="logo">
+                    </a>
+                </div>
+
+                <!-- Search -->
+                <div class="col-6">
+                    <form class="d-flex">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="bi bi-search"></i> <!-- Bootstrap Icons -->
+                            </span>
+                            <input type="text" class="form-control border-start-0"
+                                placeholder="Try Saree, Kurti or Search by Product Code">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Right side links/icons -->
+                <div class="col-4">
+                    <div class="d-flex align-items-center justify-content-end gap-4">
+
+                        <a href="#" class="btn Supplier-btn">
+                            <span class="small">Become a Supplier</span>
+
+                        </a>
+
+
+
+                        <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                            <i class="bi bi-person fs-5 me-1"></i>
+                            <span class="small">Profile</span>
+                        </a>
+
+                        <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                            <i class="bi bi-cart fs-5 me-1"></i>
+                            <span class="small">Cart</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Navigation -->
+        <nav class="border-top border-bottom ">
+            <div class="container-fluid px-4">
+                <ul class="nav py-2">
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-dark" href="#">Popular</a>
+                    </li>
+
+                    <!-- Women Western with Mega Menu -->
+                    <li class="nav-item mega-menu-container">
+                        <a class="nav-link px-2 text-dark" href="#">Women Western</a>
+
+                        <!-- Mega Menu Dropdown -->
+                        <div class="mega-menu-dropdown">
+                            <div class="row">
+
+                                <!-- Column 1: Topwear -->
+                                <div class="col-md-3 mega-menu-column">
+                                    <h6>Topwear</h6>
+                                    <ul>
+                                        <li><a href="#">All Topwear</a></li>
+                                        <li><a href="#">Tops & Tunics</a></li>
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">T-shirts</a></li>
+                                        <li><a href="#">Gowns</a></li>
+                                        <li><a href="#">Tops & Bottom Sets</a></li>
+                                        <li><a href="#">Shirts</a></li>
+                                        <li><a href="#">Jumpsuits</a></li>
+                                        <li><a href="#">New Trends</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 2: Bottom Wear -->
+                                <div class="col-md-3 mega-menu-column">
+                                    <h6>Bottom Wear</h6>
+                                    <ul>
+                                        <li><a href="#">All Bottomwear</a></li>
+                                        <li><a href="#">Jeans & Jeggings</a></li>
+                                        <li><a href="#">Palazzos</a></li>
+                                        <li><a href="#">Trousers & Pants</a></li>
+                                        <li><a href="#">Leggings</a></li>
+                                        <li><a href="#">Shorts & Skirts</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 3: Winterwear -->
+                                <div class="col-md-3 mega-menu-column">
+                                    <h6>Winterwear</h6>
+                                    <ul>
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Sweatshirts</a></li>
+                                        <li><a href="#">Sweaters</a></li>
+                                        <li><a href="#">Capes, Shrug & Ponchos</a></li>
+                                        <li><a href="#">Coats</a></li>
+                                        <li><a href="#">Blazers & Waistcoats</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Column 4: Plus Size -->
+                                <div class="col-md-3 mega-menu-column">
+                                    <h6>Plus Size</h6>
+                                    <ul>
+                                        <li><a href="#">Plus Size - Dresses & Gowns</a></li>
+                                        <li><a href="#">Plus Size - Tops & Tees</a></li>
+                                        <li><a href="#">Plus size - Bottomwear</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-dark" href="#">Lingerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-dark" href="#">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-2 text-dark" href="#">Kids & Toys</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Mobile Header Section -->
+    <header class="mobile-header-menu d-block d-md-none sticky-top">
+        <div class="container-fluid">
+            <nav class="navbar navbar-light bg-white border-bottom p-2">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <button class="btn border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenuSidebar">
+                        <i class="bi bi-list fs-3"></i>
+                    </button>
+                    <a class="navbar-brand mx-auto mb-0 text-danger fw-bold fs-4" href="#"><img
+                            src="assets/images/logo.png" width="50px" alt="logo"></a>
+                    <div class="d-flex gap-2">
+                        <button class="btn border-0 text-danger">
+                            <i class="bi bi-heart-fill fs-5"></i>
+                        </button>
+                        <button class="btn border-0">
+                            <i class="bi bi-cart3 fs-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Search Bar Section (Below Header) -->
+    <section class="search-section d-block d-md-none">
+        <div class="container-fluid">
+            <div class="search-box">
+                <i class="bi bi-search search-icon"></i>
+                <input type="text" class="form-control" placeholder="Search for Sarees, Kurtis, Cosmetics, etc.">
+            </div>
+        </div>
+    </section>
+    <!-- Mobile Menu Offcanvas -->
+    <div class="offcanvas offcanvas-start mobile-header-menu" tabindex="-1" id="mobileMenuSidebar">
+        <div class="offcanvas-header">
+            <button type="button" class="btn border-0" data-bs-dismiss="offcanvas">
+                <i class="bi bi-x fs-1"></i>
+            </button>
+            <img src="assets/images/logo.png" width="50px" alt="logo">
+            <div style="width: 40px;"></div>
+        </div>
+
+        <div class="offcanvas-body p-0 d-flex">
+
+            <!-- Sidebar Categories -->
+            <div class="sidebar-categories">
+
+                <!-- Popular -->
+                <a href="#" class="category-item" onclick="showCategory('popular', event)">
+                    <div class="icon-wrapper">
+                        <i class="bi bi-star-fill category-icon"></i>
+                    </div>
+                    <div class="category-name">Popular</div>
+                </a>
+
+                <!-- Kurti, Saree & Lehenga -->
+                <a href="#" class="category-item active" onclick="showCategory('kurti-saree', event)">
+                    <div class="icon-wrapper">
+                        <img src="assets/images/saree.webp" width="100%" alt="">
+                    </div>
+                    <div class="category-name">Kurti, Saree & Lehenga</div>
+                </a>
+
+                <!-- Women Western -->
+                <a href="#" class="category-item" onclick="showCategory('women-western', event)">
+                    <div class="icon-wrapper">
+                        <img src="assets/images/saree.webp" width="100%" alt="">
+                    </div>
+                    <div class="category-name">Women Western</div>
+                </a>
+
+                <!-- Lingerie -->
+                <a href="#" class="category-item" onclick="showCategory('lingerie', event)">
+                    <div class="icon-wrapper">
+                        <img src="assets/images/saree.webp" width="100%" alt="">
+                    </div>
+                    <div class="category-name">Lingerie</div>
+                </a>
+
+                <!-- Men -->
+                <a href="#" class="category-item" onclick="showCategory('men', event)">
+                    <div class="icon-wrapper">
+                        <img src="assets/images/saree.webp" width="100%" alt="">
+                    </div>
+                    <div class="category-name">Men</div>
+                </a>
+
+                <!-- Kids & Toys -->
+                <a href="#" class="category-item" onclick="showCategory('kids', event)">
+                    <div class="icon-wrapper">
+                        <img src="assets/images/saree.webp" width="100%" alt="">
+                    </div>
+                    <div class="category-name">Kids & Toys</div>
+                </a>
+
+            </div>
+
+            <!-- Category Content Area -->
+            <div class="category-content">
+                <h6>KURTI, SAREE & LEHENGA</h6>
+
+                <h5 class="mb-3" style="color: #90201f; font-size: 1rem; font-weight: 600;">Sarees</h5>
+
+                <!-- Product Grid -->
+                <div class="product-grid">
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="All Sarees">
+                        <div class="product-name">All Sarees</div>
+                    </a>
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="Georgette Sarees">
+                        <div class="product-name">Georgette Sarees</div>
+                    </a>
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="Chiffon Sarees">
+                        <div class="product-name">Chiffon Sarees</div>
+                    </a>
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="Cotton Sarees">
+                        <div class="product-name">Cotton Sarees</div>
+                    </a>
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="Net Sarees">
+                        <div class="product-name">Net Sarees</div>
+                    </a>
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="Silk Sarees">
+                        <div class="product-name">Silk Sarees</div>
+                    </a>
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="New Collection">
+                        <div class="product-name">New Collection</div>
+                    </a>
+
+                    <a href="#" class="product-item">
+                        <img src="assets/images/saree.webp" alt="Bridal Sarees">
+                        <div class="product-name">Bridal Sarees</div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ======Header-Section-End====== -->
+    <!-- ======Product-Details-Section-Start====== -->
+    <section class="product-details-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="">
+                        <div class="d-flex flex-column flex-md-column gap-4">
+                            <!-- Main Image -->
+                            <div class="main-image">
+                                <a href="assets/images/pr-1.jpg" class="spotlight" data-spotlight="product-gallery">
+                                    <img id="mainImg" src="assets/images/pr-1.jpg" width="100%" alt="Product Image" />
+                                </a>
+                            </div>
+                            <!-- Thumbnails -->
+                            <div class="thumbnails d-flex flex-md-row justify-content-center gap-2 me-md-3">
+                                <img src="assets/images/pr-1.jpg" onclick="changeImage(this, 0)" class="active" />
+                                <img src="assets/images/pr-2.jpg" onclick="changeImage(this, 1)" />
+                                <img src="assets/images/pr-3.jpg" onclick="changeImage(this, 2)" />
+                                <img src="assets/images/pr-4.jpg" onclick="changeImage(this, 3)" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="product-title">Mini shirt dress</h1>
+                    <div class="star-rating">
+                        <div class="stars">
+                            <i class="bi bi-star-fill star"></i>
+                            <i class="bi bi-star-fill star"></i>
+                            <i class="bi bi-star-fill star"></i>
+                            <i class="bi bi-star-fill star"></i>
+                            <i class="bi bi-star star empty"></i>
+                        </div>
+                        <span class="review-count">(1 customer review)</span>
+                    </div>
+                    <div class="price-section">
+                        <span class="current-price">₹2,499</span>
+                        <span class="original-price">₹3,249</span>
+                    </div>
+                    <p class="product-description">
+                        Full of flavour but with palate cleansing acidity, our kiwifruit are rich in fibre and packed
+                        with the enzyme actinidin which are brilliant for digestion.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-6">
+                            <div class="quantity-selector">
+                                <button type="button" class="btn-minus" onclick="decrementQuantity()">
+                                    <i class="bi bi-dash"></i>
+                                </button>
+                                <input type="number" id="quantity" value="1" min="1" max="99" readonly>
+                                <button type="button" class="btn-plus" onclick="incrementQuantity()">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-8">
+                            <button type="button" class="btn btn-add-cart flex-grow-1">
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="col-lg-2 col-2">
+                            <button type="button" class="btn-wishlist" onclick="toggleWishlist(this)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <button type="button" class="btn btn-buy-now">
+                        Buy It Now
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                    <div class="benefits-section">
+                        <div class="delivery-info-section">
+                            <div class="delivery-info-item">
+                                <div class="info-icon">
+                                    <i class="bi bi-box-seam"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>Estimated Delivery :</strong> 27 - 28 Dec, 2025
+                                </div>
+                            </div>
+                            <div class="delivery-info-item">
+                                <div class="info-icon">
+                                    <i class="bi bi-truck"></i>
+                                </div>
+                                <div class="info-text">
+                                    <strong>Free Shipping & Returns :</strong> On all order over $200.00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-meta-section">
+                            <div class="product-meta-item">
+                                <span class="meta-label">SKU :</span>
+                                <span class="meta-value">Woo-Beanie-Logo-2</span>
+                            </div>
+                            <div class="product-meta-item">
+                                <span class="meta-label">Categories :</span>
+                                <span class="meta-value">
+                                    <a href="#">Fashion</a>
+                                    <a href="#">Sweater</a>
+                                    <a href="#">Trousers</a>
+                                    <a href="#">Women</a>
+                                </span>
+                            </div>
+                            <div class="product-meta-item">
+                                <span class="meta-label">Tags :</span>
+                                <span class="meta-value">
+                                    <a href="#">Upsell</a>
+                                    <a href="#">Women</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              <!-- Hidden Spotlight Gallery -->
+      <div id="spotlightGallery" style="display: none">
+        <a
+          href="assets/images/pr-1.jpg"
+          class="spotlight"
+          data-spotlight="product-gallery"
+        ></a>
+        <a
+          href="assets/images/pr-2.jpg"
+          class="spotlight"
+          data-spotlight="product-gallery"
+        ></a>
+        <a
+          href="assets/images/pr-3.jpg"
+          class="spotlight"
+          data-spotlight="product-gallery"
+        ></a>
+        <a
+          href="assets/images/pr-4.jpg"
+          class="spotlight"
+          data-spotlight="product-gallery"
+        ></a>
+      </div>
+    </section>
+    <!-- ======Product-Details-Section-End====== -->
+    <!-- ======Product-Desc.-Section-Start====== -->
+    <section class="product-tabs-section bg-white">
+        <div class="container">
+            <div class="row">
+                <h3 class="section-title">THE BENEFITS OF CHOOSING US</h3>
+                <div class="row bg-white">
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                    <path d="M2 17l10 5 10-5" />
+                                    <path d="M2 12l10 5 10-5" />
+                                </svg>
+                            </div>
+                            <div class="benefit-title">
+                                SUSTAINABLE<br>MATERIALS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="bi bi-arrow-clockwise"></i>
+                            </div>
+                            <div class="benefit-title">
+                                30 DAYS<br>FREE RETURNS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="bi bi-truck"></i>
+                            </div>
+                            <div class="benefit-title">
+                                FREE SHIPPING<br>AND RETURNS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="bi bi-globe"></i>
+                            </div>
+                            <div class="benefit-title">
+                                WORLDWIDE<br>DELIVERY
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav nav-tabs product-nav-tabs" id="productTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                        data-bs-target="#description" type="button" role="tab" aria-controls="description"
+                        aria-selected="true">
+                        Description
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
+                        type="button" role="tab" aria-controls="reviews" aria-selected="false">
+                        Reviews <span class="text-muted">(1)</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content product-tab-content" id="productTabsContent">
+                <div class="tab-pane fade show active" id="description" role="tabpanel"
+                    aria-labelledby="description-tab">
+                    <p>
+                        Donec dapibus tellus sem, quis aliquam libero pharetra non. Nam vitae fermentum leo.
+                        Pellentesque bibendum dui eu mi tempor sodales. Integer gravida odio in sem laoreet tempus.
+                        Nunc vehicula nibh mauris, id bibendum metus facilisis iaculis. Phasellus suscipit dictum
+                        lacus eu auctor. Duis commodo faucibus lectus, et accumsan quam egestas at. Praesent eros mi,
+                        condimentum sit amet felis quis, hendrerit ullamcorper turpis. Etiam vel cursus elit, ut
+                        semper velit. Aenean sagittis leo massa, fermentum sollicitudin sem facilisis vel.
+                        Suspendisse potenti. Fusce porta tincidunt interdum.
+                    </p>
+
+                    <p>
+                        Praesent nec diam eleifend, vestibulum justo aliquet, aliquam ipsum. Curabitur egestas,
+                        augue a pellentesque ornare, tellus velit pulvinar nisl, sit amet placerat enim sem vel elit.
+                        Duis a mi metus. Suspendisse vulputate velit tempus efficitur lacus sit amet nunc ultricies
+                        ac gravida ante tempor
+                    </p>
+                    <div class="care-icons">
+                        <div class="care-icon-item">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M4 5h16M4 9h16M4 13h16M4 17h16M7 3v18M17 3v18" />
+                                <text x="12" y="14" text-anchor="middle" font-size="8" fill="currentColor">30°</text>
+                            </svg>
+                        </div>
+                        <div class="care-icon-item">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M12 2L2 12l10 10 10-10L12 2z" />
+                                <line x1="6" y1="6" x2="18" y2="18" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="care-icon-item">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M3 12h14l4 4v4H3v-8z" />
+                                <circle cx="7" cy="16" r="0.5" fill="currentColor" />
+                                <circle cx="10" cy="16" r="0.5" fill="currentColor" />
+                                <path d="M17 12V8a5 5 0 00-10 0v4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item-specifics">
+                        <h4>Item specifics</h4>
+                        <ul>
+                            <li>MACHINE WASH AT MAX.TEMP. 30° C – NORMAL PROCESS</li>
+                            <li>DO NOT BLEACH</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                    <h4>Customer Reviews</h4>
+                    <p>There is 1 review for this product.</p>
+                    <div class="review-item border-top pt-4 mt-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <strong>John Doe</strong>
+                                <div class="text-warning">
+                                    ★★★★☆
+                                </div>
+                            </div>
+                            <span class="text-muted">December 20, 2025</span>
+                        </div>
+                        <p class="mb-0">Great product! Highly recommended. The quality is excellent and fits perfectly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======Product-Desc.-Section-Start====== -->
+    <!-- ======Footer-Section-Start====== -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-col mb-4">
+                    <img src="assets/images/logo.png" width="80px" alt="Footer Logo">
+                    <p class="footer-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula ante eget aliquam
+                        venenatis. Donec
+                        congue at ligula in cursus.
+                    </p>
+                    <div class="social-follow">
+                        <h6>FOLLOW US</h6>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" aria-label="Pinterest">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                            <a href="#" aria-label="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-col mb-4">
+                    <h5 class="footer-heading">COMPANY INFO</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Store Locations</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-col mb-4">
+                    <h5 class="footer-heading">HELP & SUPPORT</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Help and Advice</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-col mb-4">
+                    <h5 class="footer-heading">MY ACCOUNT</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register Account</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="#">My Compare</a></li>
+                        <li><a href="#">Checkout</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0 small">&copy; 2025 IRISZON. All Rights Reserved.</p>
+        </div>
+    </div>
+    <!-- ======Footer-Section-End====== -->
+    <!-- ======Mobile-Bottom-Bar-Section-Start====== -->
+    <nav class="mobile-bottom-bar d-md-none">
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">
+                    <div class="nav-icon home-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                        </svg>
+                    </div>
+                    <span class="nav-label">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <div class="nav-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                        </svg>
+                    </div>
+                    <span class="nav-label">Categories</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <div class="nav-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                    </div>
+                    <span class="nav-label">Mall</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <div class="nav-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                            <line x1="12" y1="17" x2="12.01" y2="17" />
+                        </svg>
+                    </div>
+                    <span class="nav-label">Help</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <div class="nav-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                    </div>
+                    <span class="nav-label">Account</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- ======Mobile-Bottom-Bar-Section-End====== -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/JS/main.js"></script>
+    <script src="./assets/JS/spotlight.bundle.js"></script>
+    <script src="./assets/JS/spotlight.js"></script>
+
+</body>
+
+</html>
